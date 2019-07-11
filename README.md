@@ -5,9 +5,9 @@ Following directories are excluded from compilation:
 1. Examples
 2. Testing 
 ## Build Steps 
-1. Download standalone tool chain for architecture 'arm' and api level '28' :
+1. Download standalone tool chain for architecture 'arm' and api level '28' : 
 	[https://developer.android.com/ndk/guides/standalone_toolchain](https://developer.android.com/ndk/guides/standalone_toolchain)
-	   Android Tool chain version is **v4.9** 
+	Android Tool chain version is **v4.9** 
 2. Add the Android standalone tool chain path to the PATH variable
    For e.g.
 	```bash
