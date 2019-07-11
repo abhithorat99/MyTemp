@@ -2,8 +2,8 @@
 # Appliance common code library
 Commit ID of Appliance common code used for library creation is **ea6c106692779edc28fb3e4c2b5c4aaa065510a2**  
 Following directories are excluded from compilation:  
-	1. Examples  
-	2. Testing 
+- Examples  
+- Testing 
 ## Build Steps 
 1. Download standalone tool chain for architecture 'arm' and api level '28' :   
 	[https://developer.android.com/ndk/guides/standalone_toolchain](https://developer.android.com/ndk/guides/standalone_toolchain)  
