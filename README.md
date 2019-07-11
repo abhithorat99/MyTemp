@@ -19,7 +19,7 @@ Following directories are excluded from compilation:
 	source setcc
 	```
 4. To build code
-	```bash	
+	```	
 	make
 	```
 	This will create Appliance common code static library **libappcommoncode.a** in directory **build**
