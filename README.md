@@ -8,17 +8,17 @@ Following directories are excluded from compilation:
 1. Download standalone tool chain for architecture 'arm' and api level '28' :   
 	[https://developer.android.com/ndk/guides/standalone_toolchain](https://developer.android.com/ndk/guides/standalone_toolchain)  
 	Android Tool chain version is **v4.9** 
-2. Add the Android standalone tool chain path to the PATH variable
-   For e.g.
-	```bash
+2. Add the Android standalone tool chain path to the PATH variable  
+   For e.g.  
+	```
 	export PATH=$PATH:/home/user/Project/android_toolchain/bin
 	```
 
-3. To configure what tools to use 
-	```bash	
+3. To configure what tools to use   
+	```	
 	source setcc
 	```
-4. To build code
+4. To build code  
 	```	
 	make
 	```
