@@ -1,5 +1,7 @@
 
 # Appliance common code library
+Copy all the Appliance common code directories from [https://github.com/geappliances/applcommon.applcommon](https://github.com/geappliances/applcommon.applcommon) in Appliance_common_code_library directory.  
+ 
 Commit ID of Appliance common code used for library creation is **ea6c106692779edc28fb3e4c2b5c4aaa065510a2**  
 Following directories are excluded from compilation:  
 - Examples  
