@@ -23,9 +23,3 @@ Commit ID of Appliance common code used for library creation is **ea6c106692779e
 	make  
 	```
 	This will create Appliance common code static library **libappcommoncode.a** in directory **build**
-
-## Note
-
-Following directories are excluded from compilation:  
-- Examples  
-- Testing  
