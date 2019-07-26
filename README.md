@@ -29,31 +29,27 @@
 	```bash	
 	sudo apt-get install android-tools-adb android-tools-fastboot  
 	```
-2. Connect Type C cable to **Type C Port1** of th board and PC   
+2. Connect Type C cable to **Type C Port1** of the board and PC   
 
 3. On Android Platform, to get super user access execute following command  
 	```bash	
 	su  
 	```
-2. To push GEA Application, Test application and run script on android platform execute following command  
+4. To push GEA Application, Test application and run script on android platform execute following command  
 	```bash	
 	make install  
 	```
 	This will push GEA Application, Test application and run script in **data/local/tmp** directory  
 
-3. Go to **data/local/tmp** directory and run **run.sh** script  
-	```bash	
-	./run.sh  
-	```
-3. Go to **data/local/tmp** directory and run **run.sh** script  
+5. Go to **data/local/tmp** directory and run **run.sh** script  
 	```bash	
 	./run.sh  
 	```
 	This will run GEA application in background and Test application in foreground.  
 
-4. Test Application is Menu driven. Menu will appear like :  
+6. Test Application is Menu driven. Menu will appear like :  
 
 	Enter command to send :   
 	1. Read Status	2. Start Bake	3. Stop Bake  
 
-5. Select Action to be performed from Menu  	
+7. Select Action to be performed from Menu  	
