@@ -54,6 +54,7 @@
 	1. Read Status	2. Start Bake	3. Stop Bake  
 
 7. Select Action to be performed from Menu  	
+8. Refer below screenshots of applications.
 
 ![Start Bake](Images/Image1.png)
 ![Stop Bake](Images/Image2.png)
