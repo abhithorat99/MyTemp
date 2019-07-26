@@ -1,25 +1,36 @@
 
-# Appliance common code library
+# GEA Application 
+   This source code creates executable of GEA application  
 
 ## Build Steps 
-1. Download standalone tool chain for architecture 'arm' and api level '28' :   
-	[https://developer.android.com/ndk/guides/standalone_toolchain](https://developer.android.com/ndk/guides/standalone_toolchain)  
-	Android Tool chain version is **v4.9** 
-2. Add the Android standalone tool chain path to the PATH variable  
-   For e.g.  
-	```bash
-	export PATH=$PATH:/home/user/Project/android_toolchain/bin
-	```
+1. Compile Appliance_common_code_library. This will create **libappcommoncode.a** in **build** directory.  
 
-3. To configure what tools to use   
-	```bash	
-	source setcc
- 	```
-4. Copy all the Appliance common code directories from [https://github.com/geappliances/applcommon.applcommon](https://github.com/geappliances/applcommon.applcommon) in Appliance_common_code_library directory.  
-Commit ID of Appliance common code used for library creation is **ea6c106692779edc28fb3e4c2b5c4aaa065510a2**  
- 
-5. To build code  
+2. To build GEA application code  
 	```bash	
 	make  
 	```
-	This will create Appliance common code static library **libappcommoncode.a** in directory **build**
+	This will create GEA application executable **gea3app** in directory.
+
+3. To build Test application code goto directory **Test_app**  
+	```bash	
+	make  
+	```
+	This will create Test application executable **testApplication** in directory.  
+
+## GEA Application Testing Steps
+1. Run GEA application.  
+	```bash	
+	sudo ./gea3app  
+	```
+
+2. Run Test application.  
+	```bash	
+	sudo ./testApplication  
+	```
+
+3. Test Application is Menu driven. Menu will appear like :
+
+	Enter command to send : 
+	1. Read Status	2. Start Bake	3. Stop Bake
+
+4. Select Action from Menu  	
