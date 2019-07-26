@@ -3,34 +3,39 @@
    This source code creates executable of GEA application  
 
 ## Build Steps 
-1. Compile Appliance_common_code_library. This will create **libappcommoncode.a** in **build** directory.  
-
-2. To build GEA application code  
+1. To build Appliance common code library, GEA application and Test application execute following command   
 	```bash	
-	make  
+	make all  
 	```
-	This will create GEA application executable **gea3app** in directory.
+	This will create GEA application executable at path **gea_application/gea3app** ,  Appliance common code library at path **Appliance_common_code_library/build/libappcommoncode.a** and Test application executable at path **Test_app/testApplication**.
 
-3. To build Test application code goto directory **Test_app**  
+2. To build only GEA application execute following command  
 	```bash	
-	make  
+	make app  
 	```
-	This will create Test application executable **testApplication** in directory.  
+	This will create GEA application executable at path **gea_application/gea3app**  
 
 ## GEA Application Testing Steps
-1. Run GEA application.  
+1. To install the ADB execute the following command from the terminal  
 	```bash	
-	sudo ./gea3app  
+	sudo apt-get install android-tools-adb android-tools-fastboot  
 	```
 
-2. Run Test application.  
+2. To push GEA Application, Test application and run script on android platform execute following command  
 	```bash	
-	sudo ./testApplication  
+	make install  
 	```
+	This will push GEA Application, Test application and run script in **data/local/tmp** directory  
 
-3. Test Application is Menu driven. Menu will appear like :
+3. Got **data/local/tmp** directory and run **run.sh** script  
+	```bash	
+	./run.sh  
+	```
+	This will run GEA application in background and Test application in foreground.
+
+4. Test Application is Menu driven. Menu will appear like :
 
 	Enter command to send : 
 	1. Read Status	2. Start Bake	3. Stop Bake
 
-4. Select Action from Menu  	
+5. Select Action to be performed from Menu  	
