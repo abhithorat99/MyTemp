@@ -11,7 +11,8 @@
 2. To configure what tools to use   
 	```bash	
 	source setcc
- 	``` 
+ 	```
+	**Note : To build for host machine skip step number 2**   
 3. To build Appliance common code library, GEA application and Test application execute following command   
 	```bash	
 	make all  
@@ -53,3 +54,6 @@
 	1. Read Status	2. Start Bake	3. Stop Bake  
 
 7. Select Action to be performed from Menu  	
+
+![Start Bake](Images/Image1.png)
+![Stop Bake](Images/Image2.png)
