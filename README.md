@@ -6,9 +6,8 @@
 1. Add the Android standalone tool chain path to the PATH variable  
    For e.g.  
 	```bash
-	export PATH=$PATH:/home/user/Project/android_toolchain/bin
+	export PATH=$PATH:/home/user/Project/android_toolchain/bin  
 	```
-
 2. To configure what tools to use   
 	```bash	
 	source setcc
@@ -30,7 +29,12 @@
 	```bash	
 	sudo apt-get install android-tools-adb android-tools-fastboot  
 	```
+2. Connect Type C cable to **Type C Port1** of th board and PC   
 
+3. On Android Platform, to get super user access execute following command  
+	```bash	
+	su  
+	```
 2. To push GEA Application, Test application and run script on android platform execute following command  
 	```bash	
 	make install  
@@ -41,11 +45,15 @@
 	```bash	
 	./run.sh  
 	```
-	This will run GEA application in background and Test application in foreground.
+3. Go to **data/local/tmp** directory and run **run.sh** script  
+	```bash	
+	./run.sh  
+	```
+	This will run GEA application in background and Test application in foreground.  
 
-4. Test Application is Menu driven. Menu will appear like :
+4. Test Application is Menu driven. Menu will appear like :  
 
-	Enter command to send : 
-	1. Read Status	2. Start Bake	3. Stop Bake
+	Enter command to send :   
+	1. Read Status	2. Start Bake	3. Stop Bake  
 
 5. Select Action to be performed from Menu  	
