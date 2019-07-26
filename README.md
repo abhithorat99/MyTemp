@@ -2,14 +2,24 @@
 # GEA Application 
    This source code creates executable of GEA application  
 
-## Build Steps 
-1. To build Appliance common code library, GEA application and Test application execute following command   
+## Build Steps
+1. Add the Android standalone tool chain path to the PATH variable  
+   For e.g.  
+	```bash
+	export PATH=$PATH:/home/user/Project/android_toolchain/bin
+	```
+
+2. To configure what tools to use   
+	```bash	
+	source setcc
+ 	``` 
+3. To build Appliance common code library, GEA application and Test application execute following command   
 	```bash	
 	make all  
 	```
 	This will create GEA application executable at path **gea_application/gea3app** ,  Appliance common code library at path **Appliance_common_code_library/build/libappcommoncode.a** and Test application executable at path **Test_app/testApplication**.
 
-2. To build only GEA application execute following command  
+4. To build only GEA application execute following command  
 	```bash	
 	make app  
 	```
@@ -27,7 +37,7 @@
 	```
 	This will push GEA Application, Test application and run script in **data/local/tmp** directory  
 
-3. Got **data/local/tmp** directory and run **run.sh** script  
+3. Go to **data/local/tmp** directory and run **run.sh** script  
 	```bash	
 	./run.sh  
 	```
