@@ -2,8 +2,8 @@
 # Android POC Architecture
 
 ## Architecture 1 (Direct communication using NDK Layer)
-![Architecture 1](Images/Image1.png)
-![Architecture 1](Images/Image2.png)
+![Architecture 1 Block diagram](Images/Image1.png)
+![Architecture 1 Android Architecture diagram](Images/Image2.png)
 
 * The Android application for GE appliance is developed using Android SDK. This Android App makes use of Named Pipe(FIFO) to communicate with GEA Application.
 This Pipe code is written as Native Code(C/C++)  
@@ -13,10 +13,11 @@ To solve this issue Android provides JNI and Android NDK which allow to use Nati
 * GEA Application code implements GEA task/thread which initializes GEA Bus. GEA Application code also implements UART configuration code for GEA3 communication. This code implements API’s required by GE appliance common code library to send and receive data over UART.  
 This GEA Application run at Android Bootup.  
 * GE appliance common code module which is provided by GE is written in Native language i.e. C. This module is common for all the appliances hence to provide interoperability and reusability, a static library is created using this code. This library is part of GEA Application code.  
+**Note:To checkout code for Architecture 1 use tag Arcitecure_1 under development branch**
 
 ## Architecture 2 (Using Android Services and Service Manager)
-![Architecture 1](Images/Image3.png)
-![Architecture 1](Images/Image4.png)
+![Architecture 2 Block diagram](Images/Image3.png)
+![Architecture 2 Android Architecture diagram](Images/Image4.png)
 
 * The Android application (apk) for GE appliance is developed using Android SDK. This Android App makes use of API’s exported by GEA Device Manager and GEA services.
 * GEA Device Manager and GEA device Manager Services are part of Java framework and acts as interface between low level GEA Application code and GEA App (apk). To access any functionality of GEA code, android app will start these services at Android framework layer.
