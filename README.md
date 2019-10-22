@@ -15,14 +15,14 @@ This GEA Application run at Android Bootup.
 * GE appliance common code module which is provided by GE is written in Native language i.e. C. This module is common for all the appliances hence to provide interoperability and reusability, a static library is created using this code. This library is part of GEA Application code.  
 
 ## Architecture 2 (Using Android Services and Service Manager)
-![Architecture 2](Images/Image3.png)
+![Architecture 1](Images/Image3.png)
 ![Architecture 1](Images/Image4.png)
 
 * The Android application (apk) for GE appliance is developed using Android SDK. This Android App makes use of API’s exported by GEA Device Manager and GEA services.
 * GEA Device Manager and GEA device Manager Services are part of Java framework and acts as interface between low level GEA Application code and GEA App (apk). To access any functionality of GEA code, android app will start these services at Android framework layer.
 * Android Application sends data from Java to JNI layer and from JNI layer to HAL Layer using HIDL.  
-* GEA Application code implements GEA task/thread which initializes GEA Bus and exports functionalities using which Android application can perform GEA3 communication.  
+* GEA Application code implements GEA task/thread which initializes GEA Bus and exports functionalities using which Android application can perform required operations.  
 * GEA Application code also implements UART configuration code for GEA3 communication. This code implements API’s required by GE appliance common code library to send and receive data over UART.  
-GEA Application code will run as a user-space process in Linux and GEA HAL will communicate with it using IPC mechanism (Named Pipe)
+GEA Application code will run as a user-space process in Linux and GEA HAL will communicate with it using IPC mechanism (Named Pipe)  
 * GE appliance common code module which is provided by GE is written in Native language i.e. C. This module is common for all the appliances hence to provide interoperability and reusability, a static library is created using this code. This library is part of GEA Application code.  
 
