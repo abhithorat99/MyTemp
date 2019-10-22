@@ -6,7 +6,7 @@
 
 * The Android application for GE appliance is developed using Android SDK. This Android App makes use of Named Pipe(FIFO) to communicate with GEA Application.
 This Pipe code is written as Native Code(C/C++)  
-** Note: Android studio 3.4.1 and Android NDK tool is used for developing Android Application **
+**Note: Android studio 3.4.1 and Android NDK tool is used for developing Android Application**
 * Since Android App is written in Java hence system services provided by android cannot use APIs of Native Code (C/C++) directly. 
 To solve this issue Android provides JNI and Android NDK which allow to use Native code API.
 * GEA Application code implements GEA task/thread which initializes GEA Bus. GEA Application code also implements UART configuration code for GEA3 communication. This code implements API’s required by GE appliance common code library to send and receive data over UART. 
